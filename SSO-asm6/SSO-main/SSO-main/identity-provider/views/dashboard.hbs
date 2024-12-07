@@ -1,0 +1,81 @@
+<!-- dashboard.hbs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            text-decoration: none;
+
+        }
+
+        .container {
+            background: #96c5ee;
+            border-radius: 5px;
+        }
+
+        .item {
+            background-color: #5599d8;
+            padding: 10px;
+            color: #000;
+            border-radius: 5px;
+            text-align: center;
+            width: 150px;
+            height: 60px;
+            margin-left:0%;
+            font-size: 30px;
+        }
+
+        .container {
+            font-size: 20px;
+            display:block;
+            flex-wrap: wrap;
+            height: 300px;
+            text-align: center;
+            font-family: "Sour Gummy";
+        }
+        h2{
+            display:block;
+            flex-wrap: wrap;
+            height: 20px;
+            background-color: #5795ec;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 80px;
+            padding: 20px;
+            font-family:"Sour Gummy";
+            color: rgb(0, 35, 105);
+        }
+        .item:hover {
+            background-color: #c286ef;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <br>
+    <h2 class="inner-title">Welcome to IdP Dashboard with username: {{message}}</h2>
+    <br>
+            You have completed the login, you can log out to try again.
+</div>
+
+
+
+
+</body>
+</html>

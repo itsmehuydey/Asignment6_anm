@@ -1,0 +1,163 @@
+<!-- login.hbs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+        :root {
+            --color-one: #f7d9c4;
+            --color-two: #ff8484;
+            --color-text-one: #777777;
+            --color-text-two: #232323;
+            --color-bg: #EFEFEF;
+            --font: 'DM Sans', sans-serif;
+        }
+
+        body {
+            font-family: var(--font);
+            color: var(--color-text-one);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .form-contact {
+            padding: 80px 0;
+        }
+
+        .form-contact .inner-wrap {
+            background: #DCE8EB;
+            padding: 60px;
+            border-radius: 8px;
+        }
+
+        .form-contact .inner-form {
+            display: block;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .form-contact .inner-form input {
+            background: #fff;
+            border: 0;
+            outline: none;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            width: 96%;
+            height: 54px;
+            padding: 0 20px;
+        }
+
+        .form-contact .inner-form .inner-button {
+            width: 100%;
+            text-align: right;
+        }
+
+        .button {
+            background: gray;
+            border: 2px solid gray;
+            color: var(--color-text-two);
+            display: inline-block;
+            padding: 16px 36px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 50px;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .button-dark {
+            background: var(--color-text-two);
+            border-color: var(--color-text-two);
+            color: #fff;
+        }
+
+        .button-dark:hover {
+            background: var(--color-one);
+            border-color: var(--color-one);
+            color: var(--color-text-two);
+        }
+
+        .box-head {
+            margin-bottom: 30px;
+        }
+
+        .box-head .inner-sub-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .box-head .inner-title {
+            font-size: 48px;
+            margin-bottom: 10px;
+            margin-top: 0;
+            color: var(--color-text-two);
+        }
+
+        .no-underline {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<!--    <h2>Login using <span>{{message}}<span></h2>-->
+<!--    <form action="http://127.0.0.1:3000/{{option}}/login" method="POST">-->
+<!--        <div>-->
+<!--            <label for="username">Username:</label>-->
+<!--            <input type="text" id="username" name="username">-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <label for="password">Password:</label>-->
+<!--            <input type="password" id="password" name="password">-->
+<!--        </div>-->
+<!--        <button type="submit">Login</button>-->
+<!--    </form>-->
+
+<div class="form-contact">
+    <div class="container">
+        <div class="inner-wrap">
+            <div class="box-head">
+                <h3 class="inner-sub-title">
+                    The login form
+                </h3>
+                <h2 class="inner-title">Login using <span>{{message}}<span></h2>
+            </div>
+            <form action="http://127.0.0.1:3000/{{option}}/login" method="POST">
+                <div class="inner-form">
+                    <div>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="nguyenthiba@gmail.com">
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Eg. 123456">
+                    </div>
+                    <div class="inner-button">
+                        <button class="button button-dark">
+                            Login Now
+                        </button>
+                        <button class="button button-dark">
+                            <a href="http://127.0.0.1:3000/{{option}}/logout" target = _blank class="no-underline">Logout</a>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
