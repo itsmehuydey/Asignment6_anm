@@ -49,7 +49,7 @@ Service Provider server 1 (port 3001): http://localhost:3001
 
 Service Provider server 2 (port 3002): http://localhost:3002
 
-Và thêm vào đấy các api endponts để thử nghiệm: /login, /dashboard, /logout.
+Thêm vào đấy các phương thức muốn thử nghiệm và api endponts để thử nghiệm: /login, /dashboard, /logout.
 
 Ví dụ: http://localhost:3000/oidc/login
 ## Một số dịch vụ
