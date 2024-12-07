@@ -9,11 +9,13 @@ Một miền trung tâm (central domain) thường đóng vai trò là Identity 
 ### Install một số gói cần thiết
 Chúng tôi sửa dụng nền tảng nên trước tiên các bạn cần tải Nodejs qua: https://nodejs.org/en/download/prebuilt-installer/current
 
+Tham khảo: https://dev.to/qoobes/express-session-failing-with-typescript-types-express-session-1ehk
+
 Sau đó, install một số package
 ```bash
 npm uninstall @types/ty
 
-npm install -D @types/express-session@1.17.0. Tham khảo: https://dev.to/qoobes/express-session-failing-with-typescript-types-express-session-1ehk
+npm install -D @types/express-session@1.17.0. 
 
 npm install hbs
 
